@@ -347,6 +347,7 @@ button:hover {
   padding: 20px;
   border: 2px solid #727672;
   border-radius: 8px;
+  background: linear-gradient(rgba(180, 150, 255, 0.6), rgba(255, 255, 255, 0.6));
   width: 400px;
   text-align: center;
 }
@@ -376,7 +377,7 @@ button:hover {
 
 /* GitHub Link */
 #ticketContent a {
-  color: #007bff;
+  color: #669eda;
   text-decoration: none;
   font-weight: bold;
 }
@@ -388,13 +389,13 @@ button:hover {
 
 
 button:hover {
-  background-color: #c82333; /* Darker red on hover */
+  background-color: #9558ca; /* Darker red on hover */
 }
 /* Congrats Message */
 #congratsMessage {
   text-align: center;
   font-size: 18px;
-  color: #28a745; /* Green */
+  color: #939f96; 
   font-weight: bold;
   margin: 20px auto;
   padding: 10px;
@@ -411,7 +412,7 @@ button:hover {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: 3px solid #007bff;
+  border: 3px solid #9cadc0;
   margin-bottom: 10px;
 }
 
