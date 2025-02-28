@@ -12,8 +12,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // Create the Congrats Message
     const congratsMessage = `
         <p class="congrats-message">
-            🎉 Congrats <strong>${name}</strong>! Your ticket is ready, and we have sent it to <strong>${email}</strong>.
+            🎉 Congrats <strong>${name}</strong>! Your ticket is ready.
         </p>
+        <h6> We've emailed your ticket to <strong>${email}</strong> and will send updates in the run up to the event.</h6>
     `;
     document.getElementById("congratsMessage").innerHTML = congratsMessage;
 
@@ -21,16 +22,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const ticketContent = `
         <div>
             <img src="${avatarUrl}" alt="Avatar" class="ticket-avatar">
+            <div class="ticketHolder">
             <h3>${name}</h3>
             <p>Email: ${email}</p>
             <p>GitHub: <a href="https://github.com/${github}" target="_blank">@${github}</a></p>
+            </div>
         </div>
     `;
     document.getElementById("ticketContent").innerHTML = ticketContent;
 });
 
-// Clear ticket and return to form
-function clearTicket() {
-    localStorage.clear();
-    window.location.href = "index.html"; // Redirect to form
-}
+
